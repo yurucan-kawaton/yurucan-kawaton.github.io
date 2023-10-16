@@ -9,6 +9,19 @@
  <body>
  <py-script>
 print("Hello, world!")
+
+%matplotlib notebook
+import matplotlib.pyplot as plt
+import numpy as np
+t = np.linspace(0, np.pi * 4, 50)
+x = np.cos(t)
+y = np.sin(t)
+z = np.linspace(0,1,50)
+fig = plt.figure()
+ax = fig.add_subplot(projection='3d')
+plt.cla()
+ax.plot(x, y, z, marker='o', markersize=5, color='blue')
+plt
  </py-script>
  </body>
  
